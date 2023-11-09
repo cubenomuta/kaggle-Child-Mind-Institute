@@ -1,4 +1,5 @@
-![スクリーンショット (224)](https://github.com/cubenomuta/kaggle-Child-Mind-Institute/assets/125228706/ad19a301-312c-44ec-ba85-7f5f07463842)
+![スクリーンショット (224)](https://github.com/cubenomuta/kaggle-Child-Mind-Institute/assets/125228706/e6fbe559-c653-4302-bd3c-209ff3e9a587)
+
 # kaggle-Child-Mind-Institute
 
 ## Info
