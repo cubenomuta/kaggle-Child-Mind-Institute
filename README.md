@@ -66,6 +66,7 @@
 |----|----|
 |series_id|train_series.parquetの加速度計データの各シリーズに対する一意の識別子|
 |night|オンセット/ウェイクアップイベントのペアの列挙。各夜に発生する可能性のあるイベントの組は最大1組です|
+|event|イベントの種類（発症か起床か)|
 |step and timestamp| step and timestamp - 加速度センサシリーズでイベントが発生した記録時刻|
 
 ## Log
