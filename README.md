@@ -70,13 +70,9 @@
 |step and timestamp| step and timestamp - 加速度センサシリーズでイベントが発生した記録時刻|
 
 ## Log
-### 20231030
+### 20231107
 - join!
-- 特徴量よくわからないものが多い
-- APIで提出って何？？
-- Google Colablatoryでやってみる
+- 特徴量少な目
+- MostvoteのNotebookをそのままsubして1000位程度
 
-### 20231102
-- エラーとの戦いから抜けて初sub成功
-  - score = 5.4231
--
+### 20231109
