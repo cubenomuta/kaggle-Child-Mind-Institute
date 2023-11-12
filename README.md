@@ -50,6 +50,7 @@
 ### train_series.parquet column information
 
 トレーニングデータとして使用するシリーズ。各シリーズは、1人の被験者の加速度計データを何日間にもわたって連続記録したものです。
+データ数は127,946,340
 
 |name|Explanation|
 |----|----|
@@ -62,6 +63,7 @@
 ### train_events.csv column information
 
 トレーニングセット内のシリーズの入眠・覚醒イベントを記録した睡眠ログ
+データ数は14,508
 
 |name|Explanation|
 |----|----|
@@ -78,8 +80,7 @@
 
 ### 20231111
 - 001_eda.ipynb
-  - データの観察(train_events.csv)
-    - データ数は14,508
+  - train_events.csv
     - stepとtimestampはどっちも4923の欠損値が存在する -> stepとtimestampはデータとしてセット
     - それぞれのunique値の数は
       |name|len(unique)|
@@ -93,3 +94,14 @@
   - イベントの種類は0, 1でエンコーディングする
   - 識別子ごとにグループ分けして、時系列で出力する
   - timestampは時系列データとして扱えるように型変換する必要あり
+
+### 20231112
+- 002_features_engineering.ipynb(https://www.kaggle.com/code/lccburk/feature-engineering-and-random-forest-prediction/notebook)
+  - timestampの時系列データへの変換
+  - 年月日時をそれぞれを表す新たな列の作成
+  - 特徴量生成
+  - 
+- いろいろまとまっているNotebook(https://www.kaggle.com/competitions/child-mind-institute-detect-sleep-states/discussion/449151)
+  - CMI_DetectSleepStates_EDA(Visualization)(https://www.kaggle.com/code/mitsuyasuhoshino/cmi-detectsleepstates-eda-visualization)
+    - すべてのトレーニングデータの時系列データを可視化している
+    - 不審点があったときにこの中から探して立ち返るといいかも
